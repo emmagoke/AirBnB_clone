@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This module contains the BaseModel class for this project.
+"""
 import uuid
 from datetime import datetime
 import models
@@ -6,9 +9,14 @@ import models
 
 class BaseModel:
     """
+    BaseModel class
     """
 
     def __init__(self, *args, **kwargs):
+        """
+        This method is called when an instance of BaseModel is created.
+        # TODO
+        """
         if kwargs:
             kwargs['created_at'] = datetime.fromisoformat(kwargs['created_at'])
             kwargs['updated_at'] = datetime.fromisoformat(kwargs['updated_at'])
