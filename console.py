@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+This Module contains the entry point of the command interpreter
 """
 import sys
 import cmd
@@ -16,7 +17,7 @@ class HBNBCommand(cmd.Cmd):
         (to the JSON file)
         """
         if line == "BaseModel":
-            obj = eval("models.base_model" + '.' +"{}()".format(line))
+            obj = eval("models.base_model" + '.' + "{}()".format(line))
             print(obj.id)
 
     def do_EOF(self, arg):
