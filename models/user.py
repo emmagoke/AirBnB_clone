@@ -3,7 +3,7 @@
 This models contains the user class that
 inherits from the BaseModel class
 """
-from base_model import BaseModel
+from .base_model import BaseModel
 
 
 class User(BaseModel):
