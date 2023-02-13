@@ -20,7 +20,8 @@ class BaseModel:
         if kwargs:
             kwargs['created_at'] = datetime.fromisoformat(kwargs['created_at'])
             kwargs['updated_at'] = datetime.fromisoformat(kwargs['updated_at'])
-            del kwargs['__class__']
+            if '__class__' in kwargs.keys():
+                del kwargs['__class__']
             self.__dict__ = kwargs
         else:
             self.id = str(uuid.uuid4())
