@@ -1,0 +1,15 @@
+footer {
+	background-color: white;
+	height: 60px;
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+	position: absolute;
+	bottom: 0px;
+}
+
+footer p {
+	text-align: center;
+	/*For the 21.5, I subtracted the size of the paragraph tag from
+	the height of th footer (60 - 17) / 2. To align it vertically*/
+	margin-top: 21.5px;
+}
