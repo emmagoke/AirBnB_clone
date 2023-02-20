@@ -3,6 +3,7 @@
 	height: 70px;
 	width: 100%;
 	border: 1px solid #DDDDDD;
+	border-radius: 4px;
 }
 
 .filters button {
@@ -15,4 +16,5 @@
 	margin-top: 11px;
 	float: right;
 	margin-right: 30px;
+	opacity: 90%;
 }
